@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table{background: white;padding: 5px;}
+        table,th,td{border: 1px solid rgb(74, 161, 128);border-collapse: collapse;padding: 5px;}
+        th{background: rgb(55, 131, 102);color: honeydew;}
+        body{background-image: url(/static/bg.jpg);background-size: cover;}
+        a{border: 1px solid rgb(201, 81, 81);padding: 5px;background: white;text-decoration: none;}
+    </style>
+</head>
+<body>
+    <center>
+    <table>
+        <tr>
+            <th>SNo</th>
+            <th>Roll No</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Email</th>
+            <th>Action</th>
+            
+        </tr>
+        {% set i=namespace(value=1) %}
+        {% for row in rows %}
+        <tr>
+            <td>{{ i.value }}</td>
+            {% set i.value=i.value+1 %}
+
+            {% for data in row %}
+            <td>{{data}}</td>
+            {% endfor %}
+
+            <td>
+                <a href="/delete/{{row[0]}}">Delete</a>
+                <a href="/update/{{row[0]}}">Update</a>
+            </td>
+        </tr>
+        {% endfor %}
+    </table> 
+    <br>
+    <a href="/add">Add Student</a>
+</center>
+</body>
+</html>
