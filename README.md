@@ -14,3 +14,6 @@
 ## About the project
 - You can manage student details
 - This is just a basic template, so it can be enhanced according to the requirements
+- Technology used : Python, flask,jinja, SQLite, HTML, CSS
+- Live link : [Go](https://studentmanage.curecode.repl.co/)
+- Screenshot: ![screenshot](static/studentmanage.png)
