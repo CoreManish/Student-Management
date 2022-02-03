@@ -14,7 +14,7 @@
 ###### If you get an error
 - Check version of flask and python ```flask --version```
    - You will see version of flask and corresponding python
-   - If you see python 2.x.x , then type python2 main.py
+   - If you see python 2.x.x , then type ```python2 main.py```
 -  If flask is not installed ```pip install flask```
    -  Specific version of flask will be installed which is compitible with intsalled version of python
 ##### Run from own server
