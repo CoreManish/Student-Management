@@ -1,10 +1,12 @@
 ### Student Management Basic
 #### Technology used
-- HTML
-- CSS
-- Flask
-- Jinja
-- SQLite
+- HTML : Markup
+- CSS : Style the markup
+- Python : Backend Programming
+- flask : As a Backend framework to manage server
+- jinja : As a web template engine for the Python
+- SQLite : Database to store data
+- sqlite3 module : A Driver to connect SQLite database with flask
 #### Technical details
 ##### Run from terminal
 - Open terminal
